@@ -32,7 +32,7 @@ def update_twitter():
     # Create dictionary to hold text and label entities
     tweet_dict = {"text": [], "label": []}
 
-    mentions = api.search(q="@TraderData Analyze:")
+    mentions = api.search(q="@IndravadanMerai Analyze:")
     print(mentions)
     words = []
     try:
@@ -98,7 +98,7 @@ while days < 7:
     update_twitter()
 
     # Wait a day
-    time.sleep(300)
+    time.sleep(60)
 
     # Update day counter
     days += 1
